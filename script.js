@@ -85,7 +85,9 @@ async function catFacts()
         
     });
 
-    for(let i = catFactArray.length; i > 0; i--)
+    console.log("nå andre veien")
+
+    for(let i = catFactArray.length-1; i > 0; i--)
     {
         console.log(catFactArray[i].fact);
 
