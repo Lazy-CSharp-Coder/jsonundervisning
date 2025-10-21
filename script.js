@@ -43,15 +43,17 @@ async function gotHouses()
 
     const home = document.querySelector("#home");
     
+
+
     for(let i = 0; i < houseStark.length; ++i)
     {
         const newCharacterDiv = document.createElement("div");
         newCharacterDiv.innerHTML =
         `
             <h1 class="characterName">${houseStark[i]}</h1>
-            <h3>${houseStark[i].nickname}</h3>
+            <h3> ${response["House Stark"] [`"${houseStark[i]}"`].title}</h3>
             <p>${houseStark[i].title}</p>
-         `
+         `       
          console.log(newCharacterDiv);
          home.appendChild(newCharacterDiv);
 
