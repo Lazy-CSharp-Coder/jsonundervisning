@@ -74,6 +74,10 @@ async function catFacts()
     const data = await fetch("https://catfact.ninja/facts");
     console.log(data);
 
+    const response = await data.json();
+    console.log(response);
+    console.log(response.data);
+
 
 }
 
