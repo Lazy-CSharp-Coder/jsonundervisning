@@ -85,6 +85,12 @@ async function catFacts()
         
     });
 
+    for(let i = catFactArray.length; i > 0; i--)
+    {
+        console.log(catFactArray[i].fact);
+
+    }
+
         
 
 
