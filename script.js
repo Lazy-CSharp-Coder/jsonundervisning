@@ -27,17 +27,19 @@ async function gotHouses()
     console.log(response["House Stark"]["Jon Snow"].title);
     console.log(response["House Targaryen"]["Daenerys Targaryen"].title);
     
+    
     // const houseStark = response["House Stark"];
 
     // new object with response
     
-    const houses = 
-    {
-        houseStark : response["House Stark"],
-        houseTargaryen : response["House Targaryen"]
-    };
+    // const houses = 
+    // {
+    //     houseStark : response["House Stark"],
+    //     houseTargaryen : response["House Targaryen"]
+    // };
 
     console.log(houses.houseStark);
+
 
 
 }
