@@ -49,7 +49,7 @@ async function gotHouses()
         newCharacterDiv.innerHTML =
         `
             <h1 class="characterName">${houseStark[i]}</h1>
-            <h3>${housesStark[i].nickName}</h3>
+            <h3>${houseStark[i].nickname}</h3>
             <p>${houseStark[i].title}</p>
          `
          console.log(newCharacterDiv);
@@ -96,6 +96,6 @@ async function catFacts()
     }
 }
 
-catFacts();
+// catFacts();
 
 
