@@ -23,16 +23,16 @@ async function gotHouses()
 
     // hente data fra fil
     const response = await data.json();
-    console.log(response);
-    console.log(response["House Stark"]["Jon Snow"].title);
-    console.log(response["House Targaryen"]["Daenerys Targaryen"].title);
+    // console.log(response);
+    // console.log(response["House Stark"]["Jon Snow"].title);
+    // console.log(response["House Targaryen"]["Daenerys Targaryen"].title);
     
     const gotCharacter = document.querySelector("#gotCharacter");
-    console.log(gotCharacter);
+    // console.log(gotCharacter);
     const houses = Object.keys(response);
     const houseStark = Object.keys(response["House Stark"]);
 
-    console.log(houses);
+    // console.log(houses);
     gotCharacter.innerHTML = 
     `
         <h1 class="characterName">${houseStark[7]}</h1>
@@ -41,6 +41,19 @@ async function gotHouses()
        
     `
     
+    for(let i = 0; i < houseStark.length; ++i)
+    {
+        const newCharacterDiv = document.createElement("div");
+        newCharacterDiv.innerHTML =
+        `
+        <h1 class="characterName">${houseStark[i]}</h1>
+        <h3>${housesStark[i].nickName}</h3>
+        <p>${houseStark[i].title}</p>
+       
+       `
+    }
+
+
     // const houseStark = response["House Stark"];
 
     // new object with response
@@ -50,8 +63,20 @@ async function gotHouses()
     //     houseStark : response["House Stark"],
     //     houseTargaryen : response["House Targaryen"]
     // };
+}
+
+// gotHouses();
+
+// hente fra api
+
+async function catFacts()
+{
+    const data = await fetch("https://catfact.ninja/facts");
+    console.log(data);
 
 
 }
 
-gotHouses();
+catFacts();
+
+
