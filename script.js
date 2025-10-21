@@ -52,7 +52,9 @@ async function gotHouses()
             <h3>${housesStark[i].nickName}</h3>
             <p>${houseStark[i].title}</p>
          `
+         console.log(newCharacterDiv);
          home.appendChild(newCharacterDiv);
+
     }
     // const houseStark = response["House Stark"];
 
