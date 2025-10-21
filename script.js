@@ -30,11 +30,13 @@ async function gotHouses()
     const gotCharacter = document.querySelector("#gotCharacter");
     console.log(gotCharacter);
     const houses = Object.keys(response);
+    const houseStark = Object.keys(response["House Stark"]);
+
     console.log(houses);
     gotCharacter.innerHTML = 
     `
-        <h1 class="characterName">${response["House Stark"]["Jon Snow"].name}</h1>
-        <h3>${response["House Stark"]["Jon Snow"].house}</h3>
+        <h1 class="characterName">${houseStark[7]}</h1>
+        <h3>${houses[0]}</h3>
         <p>${response["House Stark"]["Jon Snow"].title}</p>
        
     `
