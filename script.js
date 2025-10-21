@@ -77,6 +77,16 @@ async function catFacts()
     const response = await data.json();
     console.log(response);
     console.log(response.data);
+    const catFactArray = response.data;
+
+    catFactArray.forEach(item =>
+    {
+        console.log(item.fact);
+        
+    });
+
+        
+
 
 
 }
