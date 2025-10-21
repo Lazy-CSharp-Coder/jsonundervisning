@@ -33,27 +33,27 @@ async function gotHouses()
     const houseStark = Object.keys(response["House Stark"]);
 
     // console.log(houses);
-    gotCharacter.innerHTML = 
-    `
-        <h1 class="characterName">${houseStark[7]}</h1>
-        <h3>${houses[0]}</h3>
-        <p>${response["House Stark"]["Jon Snow"].title}</p>
+    // gotCharacter.innerHTML = 
+    // `
+    //     <h1 class="characterName">${houseStark[7]}</h1>
+    //     <h3>${houses[0]}</h3>
+    //     <p>${response["House Stark"]["Jon Snow"].title}</p>
        
-    `
+    // `
+
+    const home = document.querySelector("#home");
     
     for(let i = 0; i < houseStark.length; ++i)
     {
         const newCharacterDiv = document.createElement("div");
         newCharacterDiv.innerHTML =
         `
-        <h1 class="characterName">${houseStark[i]}</h1>
-        <h3>${housesStark[i].nickName}</h3>
-        <p>${houseStark[i].title}</p>
-       
-       `
+            <h1 class="characterName">${houseStark[i]}</h1>
+            <h3>${housesStark[i].nickName}</h3>
+            <p>${houseStark[i].title}</p>
+         `
+         home.appendChild(newCharacterDiv);
     }
-
-
     // const houseStark = response["House Stark"];
 
     // new object with response
@@ -65,7 +65,7 @@ async function gotHouses()
     // };
 }
 
-// gotHouses();
+gotHouses();
 
 // hente fra api
 
@@ -92,11 +92,6 @@ async function catFacts()
         console.log(catFactArray[i].fact);
 
     }
-
-        
-
-
-
 }
 
 catFacts();
