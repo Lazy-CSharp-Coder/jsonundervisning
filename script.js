@@ -25,6 +25,7 @@ async function gotHouses()
     const response = await data.json();
     console.log(response);
     console.log(response["House Stark"]["Jon Snow"].title);
+    console.log(response["House Targaryan"]["Daenerys Targaryen"].title);
     
 
 }
