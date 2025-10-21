@@ -27,7 +27,16 @@ async function gotHouses()
     console.log(response["House Stark"]["Jon Snow"].title);
     console.log(response["House Targaryen"]["Daenerys Targaryen"].title);
     
-    
+    const gotCharacter = document.querySelector("#gotCharacter");
+    console.log(gotCharacter);
+    gotCharacter.innerHTML = 
+    `
+        <h1>${response["House Stark"]["Jon Snow"]}</h1>
+        <h3>${response["House Stark"]}</h3>
+        <p>$${response["House Stark"]["Jon Snow"].title}</p>
+       
+    `
+
     // const houseStark = response["House Stark"];
 
     // new object with response
@@ -37,9 +46,6 @@ async function gotHouses()
     //     houseStark : response["House Stark"],
     //     houseTargaryen : response["House Targaryen"]
     // };
-
-    console.log(houses.houseStark);
-
 
 
 }
