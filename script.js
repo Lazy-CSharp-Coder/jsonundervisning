@@ -51,8 +51,8 @@ async function gotHouses()
         newCharacterDiv.innerHTML =
         `
             <h1 class="characterName">${houseStark[i]}</h1>
-            <h3> ${response["House Stark"] [`"${houseStark[i]}"`].title}</h3>
-            <p>${houseStark[i].title}</p>
+            <h3> ${response["House Stark"][`"${houseStark[i]}"`]}</h3>
+
          `       
          console.log(newCharacterDiv);
          home.appendChild(newCharacterDiv);
