@@ -29,6 +29,8 @@ async function gotHouses()
     
     const gotCharacter = document.querySelector("#gotCharacter");
     console.log(gotCharacter);
+    const houses = Object.keys(response);
+    console.log(houses);
     gotCharacter.innerHTML = 
     `
         <h1 class="characterName">${response["House Stark"]["Jon Snow"].name}</h1>
