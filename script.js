@@ -24,6 +24,8 @@ async function gotHouses()
     // hente data fra fil
     const response = await data.json();
     console.log(response);
+    console.log(response["House Stark"]["Jon Snow"].title);
+    
 
 }
 
