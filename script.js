@@ -31,9 +31,9 @@ async function gotHouses()
     console.log(gotCharacter);
     gotCharacter.innerHTML = 
     `
-        <h1>${JSON.stringify(response["House Stark"]["Jon Snow"])}</h1>
-        <h3>${response["House Stark"]}</h3>
-        <p>$${response["House Stark"]["Jon Snow"].title}</p>
+        <h1>${response["House Stark"]["Jon Snow"].name}</h1>
+        <h3>${response["House Stark"]["Jon Snow"].house}</h3>
+        <p>${response["House Stark"]["Jon Snow"].title}</p>
        
     `
 
